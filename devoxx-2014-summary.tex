@@ -1,0 +1,84 @@
+\documentclass[presentation]{beamer}
+
+\usepackage{hyperref}
+
+\begin{document}
+
+\title[Devoxx 2014 summary]{
+  \bf Devoxx 2014 summary\\
+}
+\author{{\bf Artem Oboturov}}
+\date{April 24th 2014}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Universit\'e de la performance}
+
+\begin{frame}
+\frametitle{Universit\'e de la performance by OCTO}
+
+Tools :
+\begin{itemize}
+\item \textbf{benerator} at \url{http://databene.org/} is a tool for test data generation
+\item \textbf{gatling} at \url{http://gatling-tool.org/} - stress tool for HTTP
+\item \textbf{graphite} at \url{http://graphite.wikidot.com/} for scalable realtime graphing (e.g. to vizualize performance results)
+\begin{itemize}
+\item \textbf{whisper} is a fixed-size database of numeric data over time
+\item \textbf{carbon} is a backend for graphite
+\end{itemize}
+\item \textbf{metrics} \url{http://metrics.codahale.com}/ library to introduce points of performance measurement
+\item \textbf{collectd} \url{http://collectd.org/} is a daemon which periodically collects system performance statistics
+\end{itemize}
+
+\end{frame}
+
+\section{Microbenchmarking avec JMH}
+
+\begin{frame}
+\frametitle{Microbenchmarking avec JMH by OCTO}
+
+\begin{itemize}
+\item JMH is a Java harness for building, running, and analysing nano/micro/milli/macro benchmarks written in Java and other languages targetting the JVM
+\item Opensource and a part of OpenJDK project :
+\url{http://openjdk.java.net/projects/code-tools/jmh/}
+\url{http://hg.openjdk.java.net/code-tools/jmh/}
+\item Start learning by using samples:
+\url{http://hg.openjdk.java.net/code-tools/jmh/file/tip/jmh-samples/src/main/java/org/openjdk/jmh/samples/}
+\item Annotation-driven framework, generates code from the annotated sources, and bench-marks the generated version (which would better reflect a real execution)
+\end{itemize}
+
+\end{frame}
+
+\section{Mesurer directement depuis le CPU: les compteurs de performance}
+
+\begin{frame}
+\frametitle{Mesurer directement depuis le CPU: les compteurs de performance by Ullink}
+
+\begin{itemize}
+\item Overseer is a Java framework that makes it possible \textbf{on Linux systems} by simplifying access to real-time measurement of low-level data such as Hardware Performance Counters (HPCs), IPMI sensors, and Java VM internal events. Overseer supports functionalities such as HPC-management, process/thread affinity settings, hardware topology identification, as well as power-consumption and temperature monitoring.
+\item OverHpc relies on \textbf{libpfm41} for the management of HPCs.
+\item Hardware topology information is gathered through the \textbf{libhwloc} library.
+\item More data are acquired from IPMI-compatible sensors with the Intelligent Platform Management Interface3, a standardized interface used by system administrators to manage computer systems and monitor their operations.
+\end{itemize}
+
+\end{frame}
+
+\section{Ansible in action - le provisionning au bon niveau d'abstraction}
+
+\begin{frame}
+\frametitle{Ansible in action - le provisionning au bon niveau d'abstraction}
+
+\begin{itemize}
+\item Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.
+\url{http://docs.ansible.com/}
+\item {[Just another one]} DevOps util
+\item Reusable playbooks : Ansible Galaxy
+\url{https://galaxy.ansible.com/}
+\end{itemize}
+
+\end{frame}
+
+\end{document}
+
