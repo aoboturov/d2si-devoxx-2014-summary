@@ -206,5 +206,59 @@ Specialists list:
 
 \end{frame}
 
+\section{Virtualization 2.0 et kernel linux}
+
+\begin{frame}
+\frametitle{Virtualization 2.0 et kernel linux by Xebia}
+
+\begin{itemize}
+\item No hypervisor : use linux \textbf{control groups}
+\item Control hardware resource usage
+\item Resources isolation via namespaces
+\item \textbf{lxc}-\{create $\vert$ start $\vert$ ls $\vert$ stop \}
+\end{itemize}
+
+\end{frame}
+
+\section{33 things you want to do better}
+
+\begin{frame}
+\frametitle{33 things you want to do better by T. Bujok (1)}
+
+Libraries:
+\begin{itemize}
+\item \textbf{lombock} annotations to be used to simplify Java POJOs
+@Data @Builder @Log4j @Cleanup @Delegate
+\url{http://projectlombok.org/}
+\item \textbf{lambdaj}
+\url{https://code.google.com/p/lambdaj/}
+\item \textbf{slf4j} TODO : remove .printStackTrace - it does not show the source of error; TODO : remove Log4j loggin with no formatting clause (idem)
+\item \textbf{spock} is a testing and specification framework for Java and Groovy applications.
+\url{https://code.google.com/p/spock/}
+\item \textbf{unitils} is an open source library aimed at making unit and integration testing easy and maintainable
+@InjectInto @InjectIntoStatic
+\url{http://www.unitils.org/}
+\item \textbf{gauva} : cache, optional, multivalue sets, etc
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{33 things you want to do better by T. Bujok (2)}
+
+Testing:
+\begin{itemize}
+\item \textbf{junitparams} @Params, \$() = new Object[]\{\};
+\url{https://code.google.com/p/junitparams/}
+\item \textbf{awaitility} await().atMost(5, SECONDS).until(costumerStatusIsUpdated());
+\url{https://code.google.com/p/awaitility/}
+\item \textbf{byteman} byte code injection : could be used for tracing, etc
+\url{http://www.jboss.org/byteman}
+\end{itemize}
+
+Try to use more \textbf{Groovy} for scripting and development
+
+\end{frame}
+
 \end{document}
 
