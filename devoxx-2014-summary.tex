@@ -80,5 +80,131 @@ Tools :
 
 \end{frame}
 
+\section{Deux ann\'ees de Continuous Delivery au pays des traders}
+
+\begin{frame}
+\frametitle{Deux ann\'ees de Continuous Delivery au pays des traders by GLE:FP}
+
+\begin{itemize}
+\item Maven plugins for deployment and versioning management:
+\begin{itemize}
+\item \textbf{Deployit} used to deploy a Deployment Package to an single environment
+\url{http://tech.xebialabs.com/deployit-maven-plugin/}
+\item \textbf{Build-number} is designed to get a unique build number for each time you build your project
+\url{http://mojo.codehaus.org/buildnumber-maven-plugin/}
+\item \textbf{Versions} is used when you want to manage the versions of artifacts in a project's POM
+\url{http://mojo.codehaus.org/versions-maven-plugin/}
+\end{itemize}
+\item Deployment MUST be automated
+\item Test are better in ISO-production environment
+\item Release should become a "Non-event"
+\end{itemize}
+
+\end{frame}
+
+\section{Am\'elioration de build maven}
+
+\begin{frame}
+\frametitle{Am\'elioration de build maven by Courtanet}
+
+\begin{itemize}
+\item \textbf{Inifinitest} : each time a change is made on the source code, all the tests that might fail because of those changes, are run be an IDE plugin
+\url{http://infinitest.github.io/}
+\item \textbf{Moreunit} another unit test framework
+\url{http://moreunit.sourceforge.net/}
+\item \textbf{Maven timeline plugin}
+\url{https://github.com/dgageot/maven-timeline}
+\end{itemize}
+
+\end{frame}
+
+\section{Les Applications R\'eactives : un nouveau paradigme pour lever les d\'efis de l'\'economie num\'erique}
+
+\begin{frame}
+\frametitle{Les Applications R\'eactives : un nouveau paradigme pour lever les d\'efis de l'\'economie num\'erique by InTech}
+
+\begin{itemize}
+\item \textbf{Reactive manifesto} by Typesafe (Scala, Akka, etc)
+\url{http://www.reactivemanifesto.org/}
+\item Look into Scala Promise API and Java 8 CompletableFuture API
+\end{itemize}
+
+\end{frame}
+
+\section{IntelliJ IDEA tips and tricks by Jetbrains}
+
+\begin{frame}
+\frametitle{IntelliJ IDEA tips and tricks by Jetbrains}
+
+\begin{itemize}
+\item Use keyboard only
+\item To learn how to use only the keyboard, try to use the \textbf{Key promoter} plugin which shows to user how one can easily make the same action using only keyboard (menus and toolbar button mouse clicks initiates shortcut display).
+\item Print the IntelliJ keymap for your OS and use it
+\item Use structural search
+\item Multi-cursor edit
+\end{itemize}
+
+\end{frame}
+
+\section{Building a Real-Time Risk Analysis System in Java}
+
+\begin{frame}
+\frametitle{Building a Real-Time Risk Analysis System in Java by GLE:FP (1)}
+
+Maven best practices proposed :
+\begin{itemize}
+\item source: \textbf{javaformatter} + \textbf{jrx}
+\url{https://code.google.com/p/maven-java-formatter-plugin/}
+\url{https://maven.apache.org/plugins/maven-jxr-plugin/}
+\item packaging: \textbf{appassembler} + \textbf{war} + \textbf{assembly}
+\url{http://mojo.codehaus.org/appassembler/appassembler-maven-plugin/}
+\item release: \textbf{release} + \textbf{changes} + \textbf{buildnumber}
+\url{https://maven.apache.org/plugins/maven-changes-plugin/}
+\url{http://maven.apache.org/maven-release/maven-release-plugin/}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Building a Real-Time Risk Analysis System in Java by GLE:FP (2)}
+
+Maven best practices proposed :
+\begin{itemize}
+\item documentation : \textbf{site markdown} + \textbf{sample/snippet} + \textbf{linkcheck} + \textbf{pdf} + \textbf{umlgraph}
+\item dependency: \textbf{version} + \textbf{overview} + \textbf{enforcer-plugin} + \textbf{dependency-tree} 
+\item test : \textbf{pitest} + \textbf{failsafe} + \textbf{jacoco} + \textbf{checker}
+\end{itemize}
+
+Exception monitoring in logs \textbf{(The Elasticsearch ELK Stack)}
+\begin{itemize}
+\item \textbf{logstash} is a tool for managing events and logs
+\url{http://logstash.net/}
+\item \textbf{elastic search}
+\url{http://www.elasticsearch.org/}
+\item \textbf{kibana} - the RT data visualization dashboard
+\url{http://www.elasticsearch.org/overview/kibana/}
+\end{itemize}
+
+\end{frame}
+
+\section{BOF BrownBagLunch France}
+
+\begin{frame}
+\frametitle{BOF BrownBagLunch France}
+
+The concept (from Wikipedia):
+a \textbf{brown bag seminar}, session or lunch is generally a training or information session during a lunch break. The term "brown bag" refers to the packed lunch meals that are either brought along by the attendees or provided by the host. In the USA, these are often packed in brown paper bags. Brown bag seminars will normally run for one or two hours.
+\url{http://en.wikipedia.org/wiki/Brown_bag_seminar}
+
+\vskip5pt
+The site:
+\url{http://www.brownbaglunch.fr/}
+
+\vskip5pt
+Specialists list:
+\url{http://www.brownbaglunch.fr/baggers.html}
+
+\end{frame}
+
 \end{document}
 
